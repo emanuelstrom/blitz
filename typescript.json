@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      "jsx": "preserve",
+      "strict": true,
+      "noEmit": true
+    },
+    "include": [
+        "./src/**/*",
+        "images.d.ts"
+    ]
+  }
+  
+
