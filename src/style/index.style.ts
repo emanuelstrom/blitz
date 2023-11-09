@@ -7,9 +7,9 @@ const Section = styled.section`
     background-image: url(${background});
     background-size: 80%;
 
-    background-position: top right;
+    background-position: bottom right;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 100vh;
     height: 100%;
     min-height: 100vh;
     position: relative;
