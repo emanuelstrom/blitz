@@ -2,19 +2,27 @@ import styled from "styled-components";
 import background from "../images/background.jpg";
 
 const Section = styled.section`
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    background-image: url(${background});
-    background-size: 80%;
 
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    width: 100vh;
+    width: 100vw;
     height: 100%;
     min-height: 100vh;
     position: relative;
-    background-color: #051435;
+
     overflow: hidden;
+`;
+
+const BackgroundImage = styled.img`
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 `;
 
 const Container = styled.div`
@@ -149,6 +157,7 @@ const CompanyLogo = styled.img<{width: string}>`
 const S = { 
     Section,
     Overlay1,
+    BackgroundImage,
     Overlay2,
     Button,
     Container,
